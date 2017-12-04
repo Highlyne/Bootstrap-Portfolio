@@ -1,0 +1,23 @@
+body {
+    background-image: url("abstract-1278017_1280.jpg"); 
+    opacity: 0.8;
+    margin: 30px;
+    padding-left: 13%;
+    padding-top: 15%;
+}
+
+p {
+    color: white;
+}
+
+h1 {
+    font-family: 'Martel', serif;
+    color: white;
+    font-weight: bolder;
+}
+
+.btn {
+    background: white;
+    border-radius: 12px;
+    border: 2px solid grey;
+}
