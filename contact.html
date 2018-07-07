@@ -1,84 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en-us">
+  <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- connecting reset stylesheet -->
-    <link rel="stylesheet" type="text/css" href="resetsheet.css">
-    <!-- Bootstrap 3.3.7 compiled and minified CSS -->
+
+    <title>Bootstrap Basic Portfolio</title>
+
+    <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>   
-    <!-- My stylesheet -->
-    <link rel="stylesheet" type="text/css" href="contentstyle.css">
-    <!-- Google font stylesheet -->
-    <link href="https://fonts.googleapis.com/css?family=Cinzel|Martel:700" rel="stylesheet">
-</head>
 
-<body>
-    <nav class="wrapper">
-        <nav class="navbar navbar-inverse navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                <ul class="nav navbar-nav">
-                <li class="active">
-                <li><a href="about.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
+  </head>
+
+  <body>
+
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#" id="logo">Your Name</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right navbar-right-custom">
+            <li><a href="contact.html">Contact</a></li><span class="pipe"></span>
+            <li><a href="portfolio.html">Portfolio</a></li><span class="pipe"></span>
+            <li><a href="index.html">About</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
     </nav>
-    <header id="masthead">
-        <div class="container">
-        <a href="index.html" id="logo">Tamara Hall</a>
-        </div>
-    </header> 
-    <div id="main-container" class="container">
-        <div class="jumbotron">
-            <div class="row">
-            <div class="col-xs-6">
-            <section class="main-section">
-            <h1>Contact</h1>
+    <!-- End of navbar -->
 
-                <form id="contact-form">
-                    <ul>
-                    <li>
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" placeholder="John Smith" required="required">
-                    </li>
-                    <li>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
-                    </li>
-                    <li>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required="required"></textarea>
-                    </li>
-                    </ul>
-                    <input type="submit">
-                    </form>
-                </section>
-            </div>
-            <div class="col-xs-6">            
-                <section class="sidebar">
-                <div id="connect">
-                <h2>Connect with Me</h2>
-                <a href="https://github.com/Highlyne"><img src="images/github-128.png" class="social" alt="GitHub" /></a>
-                <a href="https://www.linkedin.com/in/tamara-hall-570430a7/"><img src="images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
-                <a href="#"><img src="images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
-                </div>
-                </section>
+    <!-- Start of content wrap -->
+    <div class="wrap">
+      <div class="container">
+        <section class="row">
+          <div class="col-md-8">
+            <form class="contact-form">
+              <h1 class="contact-form-header">Contact</h1>
+              <hr class="contact-hr"/>
+              <div class="form-group">
+                <label class="label-name" for="name">Name</label>
+                <input type="text" id="name_input" name="user_name" />
               </div>
-        </div>
-    <footer>
-    <div class="container">
-        Copyright &copy; 2016 Your Name
+              <div class="form-group">
+                <label class="label-mail" for="mail">E-mail</label>
+                <input type="email" id="mail_input" name="user_mail" />
+              </div>
+              <div class="form-group">
+                <label class="label-msg" for="msg">Message</label><br />
+                <textarea id="msg" name="user_message_input" cols=600></textarea>
+              </div>
+              <button class="submit-btn">Submit</button>
+            </form>
+          </div>
+          <div class="col-md-4">
+
+            <!-- Start of Connect With Me Area -->
+            <section id="connect-with-me-area">
+              <div class="connect-with-me-content">
+                <h1 class="connect-with-me-header">Connect With Me</h1>
+                <hr />
+                <div id="images">
+                  <img src="assets/imgs/github.png" alt="" class="connect-with-me-photo">
+                  <img src="assets/imgs/linkedin.png" alt="" class="connect-with-me-photo">
+                  <img src="assets/imgs/stackover2.png" alt="" class="connect-with-me-photo">
+                </div>
+              </div>
+            </section>
+
+            <!-- End of the Connect With Me Area -->
+          </div>
+        </section>
+      </div>
     </div>
+    <!-- End of content wrap -->
+
+    <!-- Start of footer -->
+    <footer class="footer">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        &copy; Copyright 2017 Your Name
+      </p>
     </footer>
-</body>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+  </body>
+
 </html>
