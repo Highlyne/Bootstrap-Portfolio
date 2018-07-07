@@ -6,8 +6,6 @@ Portfolio site
 Clean, clear portfolio using Twitter Bootstrap CSS Framework.
 
 
-### Submission on BCS
-
 * The site has been published with Github.io.  A to the live site is located above.
 
 ### Repo Details 
